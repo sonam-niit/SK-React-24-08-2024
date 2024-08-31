@@ -1,9 +1,9 @@
-import CSSDemo from "./components/CSSdemo";
+// import CSSDemo from "./components/CSSdemo";
 import StudentResult from "./components/DynamicStyle";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import SampleEvent from "./components/SampleEvent";
-import Slider from "./components/Slider";
+// import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import SampleEvent from "./components/SampleEvent";
+// import Slider from "./components/Slider";
 
 function App() {
   
