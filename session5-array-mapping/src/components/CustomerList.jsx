@@ -1,10 +1,15 @@
 import { useState } from "react";
 import Customers from '../assets/customers.json';
 import CustomerDetails from "./CustomerDetails";
+import CustomerForm from "./CustomerForm";
 
 function CustomerList() {
     const [customers,setCustomers]=useState(Customers);
     const [selected,setSelected]=useState(Customers[0]); //by default selected customer is 1st
+    const addCustomer=(obj)=>{
+        setCustomers([...customers,obj]);
+        alert('Customer added successfully')
+    }
     return (
         <div>
             <h3 className="p-2 text-bg-success text-center">Cutsomer List</h3>
@@ -17,10 +22,7 @@ function CustomerList() {
                     {
                         customers.map(cust=>(
                             <tr key={cust.id}>
-                                <td>{cust.id}</td>
-                                <td>{cust.name}</td>
-                                <td>{cust.email}</td>
-                                <td>{cust.username}</td>
+                                <td>{cust.id}</td><td>{cust.name}</td><td>{cust.email}</td><td>{cust.username}</td>
                                 <td>
                                     <button className="btn btn-primary" onClick={()=>setSelected(cust)}>view</button>
                                 </td>
@@ -29,9 +31,9 @@ function CustomerList() {
                     }
                 </tbody>
             </table>
-            <div className="row">
+            <div className="row mb-3">
                 <div className="col"><CustomerDetails selected={selected} /></div>
-                <div className="col"></div>
+                <div className="col"><CustomerForm addCustomer={addCustomer}/> </div>
             </div>
         </div>
     );
