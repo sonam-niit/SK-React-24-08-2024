@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "alex",
+      "email": "alex@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "P001",
+      "name": "Laptop",
+      "price": 98789,
+      "category": "electronics"
+    },
+    {
+      "id": "P002",
+      "name": "I phone 16 Pro",
+      "price": "199999",
+      "category": "electronics"
+    },
+    {
+      "id": "P003",
+      "name": "LENOVO ThinkPad",
+      "price": "79000",
+      "category": "electronics"
+    },
+    {
+      "id": "137",
+      "name": "Smart Watch",
+      "price": "6788",
+      "category": "electronics"
+    }
+  ]
+}
