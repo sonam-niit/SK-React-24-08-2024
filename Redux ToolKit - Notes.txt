@@ -1,0 +1,37 @@
+Redux ToolKit
+----------------
+Helping you to manage the global state by using some set of tools and abstractions which actually streaming your regular redux.
+
+1. configureStore:
+
+	new method which is used to create store and setup redux dev tools and all other extensions as well.
+
+2. createSlice():
+
+	Its a key functions which allows you to define state, reducers and actions at one place.
+It generates actions automatically based on your written reducers.
+
+3. Auto-generated actions:
+
+	Redux Tool kit generated actions automatically when you write methods inside your reducers.
+
+4. createAsyncThunk:	
+
+	this function handles asynchronous logic (fetching data from API)
+
+Steps which we have to follow:
+
+1. Define a slice
+2. configure a store
+3. register store in main file
+4. dispatch actions (useDispatch)
+5. subscribe data in component when the state change (useSelector)
+
+
+dependencies to be installed
+>npm I react-redux @reduxjs/toolkit
+
+
+
+
+
