@@ -21,3 +21,14 @@ export const createPost = async (data, token) => {
         headers: { Authorization: `Bearer ${token}` }
     });
 };
+export const fetchAuthorPosts = async (token) => {
+    return await axios.get(`${API_URL}/author`, {
+        headers: { Authorization: `Bearer ${token}` },
+    });
+};
+
+export const deletePost = async (postId, token) => {
+    return await axios.delete(`${API_URL}/${postId}`, {
+        headers: { Authorization: `Bearer ${token}` },
+    });
+};

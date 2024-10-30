@@ -32,12 +32,14 @@ function Login({ onLogin }) {
 
     return (
         <div className="container">
-            <h2>Login</h2>
+            <h2 className='p-2 my-2 text-bg-secondary text-center'>Login Page</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="username" placeholder="Username" onChange={handleInputChange} required />
-                <input type="password" name="password" placeholder="Password" onChange={handleInputChange} required />
+                <input type="text" name="username" placeholder="Username" onChange={handleInputChange} 
+                className='form-control mb-3' required />
+                <input type="password" name="password" placeholder="Password"
+                 onChange={handleInputChange} required className='form-control mb-3' />
                 {error && <p>{error}</p>}
-                <button type="submit" className="btn btn-primary">Login</button>
+                <button type="submit"  className="btn btn-primary mb-3 w-100">Login</button>
             </form>
         </div>
     );

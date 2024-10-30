@@ -22,12 +22,14 @@ function Register() {
 
     return (
         <div className="container">
-            <h2>Register</h2>
+            <h2 className='p-2 my-2 text-bg-secondary text-center'>Register Form</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="username" placeholder="Username" onChange={handleInputChange} required />
-                <input type="password" name="password" placeholder="Password" onChange={handleInputChange} required />
+                <input type="text" name="username" placeholder="Username" 
+                onChange={handleInputChange} required className='form-control mb-3' />
+                <input type="password" name="password" placeholder="Password" 
+                onChange={handleInputChange} required className='form-control mb-3'/>
                 {error && <p>{error}</p>}
-                <button type="submit" className="btn btn-primary">Register</button>
+                <button type="submit" className="btn btn-primary mb-3 w-100">Register</button>
             </form>
         </div>
     );
